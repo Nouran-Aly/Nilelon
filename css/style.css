@@ -1,0 +1,265 @@
+:root {
+    --orange-color: #F59022;
+    --blue-color: #44C9E1;
+    --dark-blue-color: #1E3143;
+    --white-color: #fff;
+    --grey-color: #A4ADAF;
+    --light-grey-color: #BFC8CA;
+    --dark-grey-color: #70797B;
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* navbar */
+
+.navbar .logo img {
+    width: 184px;
+    height: 46px;
+}
+
+.navbar button {
+    color: var(--white-color);
+    width: 128px;
+    height: 40px;
+    padding: 8px 12px;
+    border-radius: 12px;
+    border: none;
+}
+
+#loginBtn {
+    background-color: var(--dark-blue-color);
+    transition: all 0.3s;
+}
+
+#loginBtn:hover,
+#signUpBtn:hover {
+    opacity: 0.9;
+}
+
+#signUpBtn {
+    background-image: linear-gradient(to right, var(--blue-color), var(--orange-color));
+    transition: all 0.3s;
+}
+
+/* landing page */
+.landing-page {
+    height: max-content;
+    width: 100%;
+    background-color: var(--dark-blue-color);
+    background-image: url(../images/top\ right\ logo.png), url(../images/center\ left\ logo.png), url(../images/bottom\ right.png);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: top right, center left, bottom right;
+    padding-top: 100px;
+}
+
+.landing-page h3 {
+    font-weight: 700;
+    color: var(--dark-blue-color);
+}
+
+.landing-page .register {
+    color: var(--grey-color);
+}
+
+.landing-page .social-media-frame {
+    border: 1px solid var(--light-grey-color);
+    border-radius: 24px;
+}
+
+.landing-page .social-media-frame p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.landing-page form label {
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.landing-page form label:not(.gender-box label) {
+    padding: 32px 0 16px;
+    font-family: Nunito Sans;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.landing-page form .gender-box label {
+    color: var(--light-grey-color);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+input[type="date"]::-moz-calendar-picker-indicator {
+    display: none;
+}
+
+input[type="date"]::-ms-calendar-picker-indicator {
+    display: none;
+}
+
+.landing-page form .input-box {
+    position: relative;
+}
+
+.landing-page form .input-box input {
+    border-radius: 12px;
+    border: 1px solid var(--light-grey-color);
+    padding: 20px 0;
+    padding-left: 60px;
+}
+
+.landing-page form .input-box input::placeholder {
+    color: var(--light-grey-color);
+}
+
+.landing-page form .input-box .icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 25px;
+    font-size: 20px;
+}
+
+.landing-page form .input-box .icon .eye-icon {
+    padding-right: 25px;
+    color: var(--light-grey-color);
+    font-weight: 100;
+}
+
+.landing-page form .input-box i {
+    background-image: linear-gradient(to left, var(--orange-color), var(--blue-color));
+    background-clip: text;
+    color: transparent;
+}
+
+.landing-page form .phone-box {
+    border: 1px solid var(--light-grey-color);
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+#phone {
+    padding-left: 10px;
+}
+
+.landing-page form .form-check {
+    width: 232px;
+    height: 72px;
+    padding: 20px 24px;
+    border-radius: 12px;
+    border: 1px solid var(--light-grey-color);
+}
+
+.form-check-input[type=checkbox] {
+    border-color: var(--grey-color);
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+}
+
+.form-check-input:checked {
+    border-color: var(--grey-color);
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+}
+
+form span {
+    color: var(--blue-color);
+}
+
+form button {
+    width: 100%;
+    background-image: linear-gradient(to left, var(--orange-color), var(--blue-color));
+    color: white;
+    text-align: center;
+    border: none;
+    height: 64px;
+    border-radius: 12px;
+}
+
+form .error-icon {}
+
+.right-side {
+    background-image: linear-gradient(to left, var(--orange-color), var(--blue-color));
+    position: relative;
+    display: none;
+}
+
+.bottom-logo {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.right-side .info {
+    width: 100%;
+}
+
+.right-side .small-logo {
+    display: block;
+    margin: auto;
+}
+
+.footer ul li {
+    color: var(--dark-grey-color);
+    padding: 8px 0;
+}
+
+form .forget {
+    color: #006877;
+}
+
+.footer .follow-us i {
+    font-size: 20px;
+}
+
+.copy-rights p {
+    color: var(--dark-blue-color);
+}
+
+.copy-rights a {
+    color: var(--orange-color);
+}
+
+/* .error-message {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+} */
+
+.input-box .error-icon {
+    color: red;
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
